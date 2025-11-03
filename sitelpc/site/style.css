@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #cae4ff;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    position: relative;
+    display: inline-block;
+    color: rgb(34, 72, 77);
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #cae4ff;
+    color: white;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.logo {
+    height: 50px;
+    width: 70px;
+}
+
+.titulo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1.4;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 120px;
+}
+
+.descri {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 120px;
+    padding-top: 20px;
+}
+
+.pgi {
+    height: 500px;
+    width: 500px;
+    object-fit: contain;
+    padding-right: 200px;
+}
+
+.corpo {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 40px;
+}
+
+.textoi {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.container-linha {
+    padding: 0 190px;
+}
+
+.linha {
+    height: 1px;
+    background-color: #000;
+    width: 100%;
+}
+
+.texto-inicio {
+    text-align: left;
+}
+
+.container-texto {
+    padding-top: 50px;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.pergunta1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.resposta {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-top: 0px;
+    padding: 20px;
+}
+.barrab {
+    align-items: center;
+    padding: 0 20px;
+    background-color: #cae4ff;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+}
+.gapo{
+    color: rgb(34, 72, 77);
+    text-align: center;
+    padding: 30px 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.titulo2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1.4;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.textos{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 120px;
+}
+.pergunta2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-left: 110px;
+    padding-top: 10px;
+}
+.container-linha2 {
+    padding: 0 100px;
+}
+
+.linha2 {
+    height: 1px;
+    background-color: #000;
+    width: 100%;
+}
+.espaco {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px 80px;
+    flex-wrap: wrap;
+}
+.mapas{
+    align-items: flex-start;
+    padding-left: 80px;
+}
+.textom {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+.tabela {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+.tabela1{
+    object-fit: contain;
+}
+.alinhamento{
+    margin-right: 10px;
+}
+.textos1 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    color: #2c3e50;
+    font-weight: bold;
+}
+.legenda {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    color: #2c3e50;
+}
+.mapa-info {
+    flex: 1;
+    min-width: 300px;
+}
+iframe {
+    border: none;
+    max-width: 100%;
+    height: 480px;
+}
+.info-lateral {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza texto e imagem */
+    gap: 20px;
+}
