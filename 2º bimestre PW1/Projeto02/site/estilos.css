@@ -1,0 +1,56 @@
+/*Estilo geral do corpo do documento*/
+body {
+    font-family: cursive;
+    line-height: 1.6;
+    color: #333;
+}
+/*Estilo do cabeçalho*/
+header {
+    background: #cbb4e9;
+    color: rgb(56, 21, 112);
+    padding: 10px 20px;
+    text-align: center;
+}
+/*Estilo da seção*/
+section {
+    margin: 15px;
+    padding: 100px;
+    background: #e9b4dd;
+    color: #640064;
+}
+/*Estilo do rodapé*/
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background: #b4dae9;
+    color: rgb(29, 84, 87);
+}
+img {
+    border-radius: 10px;
+    border-style: dotted;
+  }
+
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color:rgb(56, 21, 112);
+}
+
+li{
+    float: left;
+}
+
+li a {
+    display: block;
+    color:#cbb4e9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*Change the link clor to #640064 on hover*/
+li a:hover{
+    background-color: #640064;
+}
