@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>JAVASCRIPT</title>
+    <meta charset="UTF-8">
+    <script>
+        function mostraResultado()
+        {
+            var numero1 = 10;
+            var numero2 = 15;
+            var resultado = numero1 + numero2;
+            document.getElementById('resultado').innerHTML=resultado;
+        }
+    </script>
+</head>
+<body>
+    <p>10 + 15 =<strong id="resultado"></strong></p>
+    <input type="button" onclick="mostraResultado()" value="Calcular" id="botao"/>
+</body>
+</html>
