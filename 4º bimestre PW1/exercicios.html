@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+</head>
+<body>
+    <h1>1- Altere o texto original para texto alterado ao clicar no botão</h1>
+    <p id="paragrafo">Texto original</p>
+    <button id="botao1" onclick="Clicar1()">Mudar Texto para "Texto Alterado"</button>
+</head>
+    
+    <h1>2-Alterar a cor de fundo da um div caixa</h1>
+    <div id="caixa" style="width: 100px; height: 100px; background-color: blue;"></div>
+    <button id="botao2" onclick="Clicar2()">Mudar Cor</button>
+
+    <h1>3- Alterar a largura de um div  </h1>
+    <div id="retangulo" style="width: 100px; height: 50px; background-color: green;"></div>
+    <button onclick="Clicar3()">Aumentar Largura</button>
+
+    <h1>4- Ocultar um elemento</h1>
+    <p id="texto">Você consegue me ver!</p>
+    <button onclick="Clicar4()">Ocultar</button>
+
+    <h1>5- Alterar a fonte de um texto</h1>
+    <p id="fonteTexto" style="font-family: Arial;">Texto com fonte padrão</p>
+    <button onclick="Clicar5()">Alterar Fonte</button>
+
+    <h1>6- Alterar o conteúdo HTML de um elemento
+    <div id="htmlContainer"><b id="b">Texto em negrito</b></div>
+    <button onclick="Clicar6()">Alterar HTML</button>
+
+
+    <h1>7- Alterar o valor de um campo de entrada</h1>
+<input type="text" id="campoTexto" value="Texto original">
+<button onclick="Clicar7()" >Alterar Valor</button>
+
+<h1>8- Alternar a visibilidade de um elemento</h1>
+<div id="visibilidade">Este texto pode desaparecer!</div>
+<button onclick="Clicar8()">Alternar Visibilidade</button>
+
+<h1>9- Alterar o tamanho da fonte de um parágrafo</h1>
+<p id="textoFonte">Texto com tamanho padrão</p>
+<button onclick="Clicar9()">Aumentar Tamanho</button>
+
+<h1>10- Ao clicar no botão trocar a imagem para um x-Tudo</h1>
+<img id="imagem" src="https://static.wixstatic.com/media/8d1837_9c1b1d1c989343c1b13de7d83f780ea1~mv2.jpg/v1/fill/w_568,h_378,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/8d1837_9c1b1d1c989343c1b13de7d83f780ea1~mv2.jpg" alt="Imagem 1" >
+<br>
+<button onclick="Clicar10()">Trocar Imagem</button>
+
+<script>
+    function Clicar1(){document.getElementById("paragrafo").innerText = "Texto Alterado";}
+
+    function Clicar2(){caixa=document.getElementById("caixa").style.backgroundColor="green"}
+
+    function Clicar3(){retangulo=document.getElementById("retangulo").style.width="200px"}
+
+    function Clicar4(){texto=document.getElementById("texto").style.display="none"}
+
+    function Clicar5(){fonteTexto=document.getElementById("fonteTexto").style.fontFamily="Times New Romam"}
+
+    function Clicar6(){b=document.getElementById("b").style.fontWeight="normal"}
+
+    function Clicar7(){campoTexto=document.getElementById("campoTexto").value="Valor alterado!"}
+
+    function Clicar8(){visibilidade=document.getElementById("visibilidade").style.display="none"}
+
+    function Clicar9(){textofonte=document.getElementById("textoFonte").style.fontSize="45px"}
+
+    function Clicar10(){img=document.getElementById("imagem").src="https://static.itdg.com.br/images/1200-675/7624c9c7c7e608f0f54330eeead72812/239570-original.jpg"}
+</script>
+
+</body>
+</html>

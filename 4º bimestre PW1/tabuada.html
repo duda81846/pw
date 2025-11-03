@@ -1,0 +1,16 @@
+<h1>Exercicio vetores</h1>
+<label>Digite o número que gostaria de ver a tabuada</label>
+<input type="number" id="entrada"/>
+<button onclick="gerarTabuada()">
+    Gerar tabuada
+</button>
+<div id="resultado"></div>
+<script>
+    function gerarTabuada(){
+        var numeros=[1,2,3,4,5,6,7,8,9,10]
+        var entrada=document.getElementById("entrada")
+        for(var i=0;i<numeros.length;i++){
+            resultado.innerHTML+="<br>"+numeros[i]+"x"+entrada.value+"="+(numeros[i]*entrada.value)
+        }
+    }
+</script>

@@ -1,0 +1,19 @@
+<input type="text" id="entrada"/>
+<button id="botao" onclick="clicoubotao()">
+    Cllique aqui
+</button>
+<script>
+    var entrada = document.getElementById("entrada")
+    entrada.value = "Oi aqui foi a entrada via js"
+    function clicoubotao(){//Criação da função
+        alert("Você acabou de clicar no botão")//vai aparecer quando clicar
+    }
+    let b = [10, 1, 12, 9, 3]
+    let ColunaI = []
+    for(var i = 0; i < 16; i++){
+        ColunaI.push(i);//O vetor.push() adiciona novos itens
+    }
+    for(var i = 0; i < ColunaI.length; i++){ // O vetor.length conta os itens do vetor
+        document.write(ColunaI[i] + "<br>")
+    }
+</script>
