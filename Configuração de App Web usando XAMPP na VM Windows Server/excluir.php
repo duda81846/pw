@@ -4,7 +4,7 @@
 if (isset($_GET["pl"])) {
     $nome = $_GET["pl"];  
     $bd = mysqli_connect("localhost", "root", "", "agenda") or die("Erro na conexão!");
-    $stmt = $bd->prepare("DELETE FROM dados WHERE nome = ?");
+    $stmt = $bd->prepare("DELETE FROM usuario WHERE nome = ?");
     $stmt->bind_param("s", $nome);
     $stmt->execute();
     if ($stmt->affected_rows > 0)
