@@ -2,29 +2,29 @@
 $nome = $_POST["nome"];
 $email = $_POST["email"];
 $telefone = $_POST["telefone"];
-$insta = $_POST["insta"];
+$conta_instagram = $_POST['conta_instagram'];
  
 $bd = mysqli_connect("localhost", "root", "", "agenda") or die("Erro ao conectar!");
  
 if (!$bd) {
-    die("Erro ao conectar ao banco de dados: " . mysqli_connect_error());
+    die("Erro ao conectar ao banco de usuario: " . mysqli_connect_error());
 }
  
-$sql = "UPDATE dados SET email = ?, telefone = ?, insta = ? WHERE nome = ?";
+$sql = "UPDATE usuario SET email = ?, telefone = ?, conta_instagram = ? WHERE nome = ?";
  
 $stmt = $bd->prepare($sql);
 if (!$stmt) {
     die("Erro ao preparar a consulta: " . $bd->error);
 }
  
-$stmt->bind_param("ssss", $email, $telefone, $instagram, $nome);
+$stmt->bind_param("ssss", $email, $telefone, $conta_instagram, $nome);
  
 if ($stmt->execute()) {
     echo "Registro alterado com sucesso! <br><br>";
     echo "Nome: $nome<br>";
     echo "Email: $email<br>";
     echo "Telefone: $telefone<br>";
-    echo "Instagram: $instagram<br><hr>";
+    echo "Instagram: $conta_instagram<br><hr>";
 } else {
     echo "ERRO - Registro não Alterado. " . $stmt->error . "<br><br>";
 }
